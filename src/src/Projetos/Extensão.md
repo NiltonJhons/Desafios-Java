@@ -35,6 +35,7 @@ Os projetos **ainda estão em desenvolvimento**. Portanto, ainda **não há link
 <div align="center">
 
 ✨ Este repositório é vivo e está em constante evolução ✨
-🚀 Acompanhe e confira as atualizações — em breve você verá muitos projetos incríveis por aqui!
+
+🚀 Acompanhe e confira as atualizações em breve você verá muitos projetos incríveis por aqui!
 
 </div>
