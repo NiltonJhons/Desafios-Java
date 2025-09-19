@@ -20,7 +20,7 @@ public class Main {
     static void main() {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("\u001B[35m===== Verificador de Palíndromos =====\u001B[0m");
+        System.out.println("\u001B[1m\u001B[35m===== Verificador de Palíndromos =====\u001B[0m");
         System.out.print("Digite uma palavra ou frase: ");
         String mensagem = input.nextLine();
 
