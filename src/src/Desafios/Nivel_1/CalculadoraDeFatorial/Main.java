@@ -20,7 +20,7 @@ public class Main {
     static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("\u001B[35m===== Calculadora de Fatorial =====\u001B[0m");
+        System.out.println("\u001B[1m\u001B[35m===== Calculadora de Fatorial =====\u001B[0m");
         System.out.print("Digite um valor: ");
         int numero = input.nextInt();
 
