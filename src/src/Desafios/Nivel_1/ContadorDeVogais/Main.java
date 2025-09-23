@@ -29,5 +29,7 @@ public class Main {
         String msg = input.nextLine();
 
         System.out.printf("A frase '%s' contém %d vogais.", msg, contarVogais(msg));
+
+        input.close();
     }
 }

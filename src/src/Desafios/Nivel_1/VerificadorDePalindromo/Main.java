@@ -25,5 +25,7 @@ public class Main {
         String mensagem = input.nextLine();
 
         System.out.printf(isPalindromo(mensagem) ? "\u001B[32mA frase é um palíndromo.\u001B[0m" : "\u001B[31mA frase NÃO é um palindromo.\u001B[0m");
+
+        input.close();
     }
 }

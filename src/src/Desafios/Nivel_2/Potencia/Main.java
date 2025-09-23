@@ -3,7 +3,7 @@ package Desafios.Nivel_2.Potencia;
 import java.util.Scanner;
 
 public class Main {
-    // Proposta: Crie um calculador de potenciação (interativo)
+    // Proposta: Crie um programa capaz de calcular a potência de um número (interativo)
 
     public static int CalculadorPotencia(int base, int e) {
         int resultado = 1;
@@ -29,5 +29,7 @@ public class Main {
 
         System.out.println("\nResultado:");
         System.out.println(CalculadorPotencia(base, expoente));
+
+        input.close();
     }
 }

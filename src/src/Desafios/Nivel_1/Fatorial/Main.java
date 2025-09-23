@@ -6,10 +6,10 @@ public class Main {
     // Proposta: O usuário insere um número e o programa retornará o fatorial deste número.
     
     public static int fatorial(int n) {
-        System.out.print(n + "! = ");
+        System.out.print("\u001B[34m" + n + "! = ");
         int fatorial = 1;
         while (n > 1) {
-            System.out.print(n + " × ");
+            System.out.print(n + " \u001B[33m× \u001B[34m");
             fatorial *= n;
             n--;
         }
@@ -24,6 +24,8 @@ public class Main {
         System.out.print("Digite um valor: ");
         int numero = input.nextInt();
 
-        System.out.println(STR."\{fatorial(numero)}\u001B[0m");
+        System.out.printf("\u001B[1m\u001B[31m%d\u001B[0m", fatorial(numero));
+
+        input.close();
     }
 }
