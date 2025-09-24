@@ -1,6 +1,5 @@
 package Desafios.Nivel_1.Arrays.CalculandoMedia;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -11,7 +10,7 @@ public class Main {
     static void main() {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("\u001B[35m===== Calculando a Média com Array =====\u001B[0m");
+        System.out.println("===== Calculando a Média com Array =====");
 
         System.out.print("Quantos valores deseja inserir?: ");
         int qtd = input.nextInt();
@@ -33,8 +32,8 @@ public class Main {
         double media = soma / qtd;
 
         System.out.printf("""
-                \n\u001B[34mA soma entre todos os valores é \u001B[1m\u001B[31m%.1f\u001B[0m\u001B[34m
-                E a média é \u001B[1m\u001B[31m%.1f\u001B[0m
+                \nA soma entre todos os valores é %.1f
+                E a média é %.1f
                 """, soma, media);
 
         input.close();

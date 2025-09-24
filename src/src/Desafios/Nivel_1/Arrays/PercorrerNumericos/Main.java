@@ -10,7 +10,7 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("\u001B[35m===== Percorre Array =====\u001B[m");
+        System.out.println("===== Percorre Array =====");
 
         int[] numeros = new int[5];
 
@@ -19,7 +19,7 @@ public class Main {
             numeros[i] = input.nextInt();
         }
 
-        System.out.println("\u001B[33mPercorrendo Array com ForEach:\u001B[0m");
+        System.out.println("\nPercorrendo Array com ForEach:");
         for (int n : numeros) {
             System.out.print(n + " ");
         }

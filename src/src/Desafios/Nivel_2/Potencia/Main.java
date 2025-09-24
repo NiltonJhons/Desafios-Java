@@ -1,5 +1,6 @@
 package Desafios.Nivel_2.Potencia;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -22,14 +23,20 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         System.out.println("\u001B[1m\u001B[35m===== Calculador de Potência =====\u001B[0m");
-        System.out.print("Valor da base: ");
-        int base = input.nextInt();
-        System.out.print("Valor do expoente: ");
-        int expoente = input.nextInt();
+        try {
+            System.out.print("Valor da base: ");
+            int base = input.nextInt();
+            System.out.print("Valor do expoente: ");
+            int expoente = input.nextInt();
 
-        System.out.println("\nResultado:");
-        System.out.println(CalculadorPotencia(base, expoente));
-
-        input.close();
+            System.out.println("\nResultado:");
+            System.out.println(CalculadorPotencia(base, expoente));
+        } catch (InputMismatchException e) {
+            System.out.println("ERROR - Digite apenas números inteiros!");
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro inesperado!.");
+        } finally {
+            input.close();
+        }
     }
 }

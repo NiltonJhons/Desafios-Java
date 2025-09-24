@@ -8,7 +8,7 @@ public class Main {
     static void main() {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("\u001B[35m===== Percorre Array com Strings =====\u001B[m");
+        System.out.println("===== Percorre Array com Strings =====");
 
         String[] nomes = new String[5];
 
@@ -17,7 +17,7 @@ public class Main {
             nomes[i] = input.nextLine();
         }
 
-        System.out.println("\n\u001B[35m===== Percorrendo Array =====\u001B[0m");
+        System.out.println("\n===== Percorrendo Array =====");
 
         for (String n : nomes) {
             System.out.println(n);

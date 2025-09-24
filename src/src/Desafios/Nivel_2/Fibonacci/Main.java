@@ -1,5 +1,6 @@
 package Desafios.Nivel_2.Fibonacci;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -8,13 +9,13 @@ public class Main {
     static void main() {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("\u001B[35m   ===== Sequência de Fibonacci =====\u001B[0m");
+        System.out.println("===== Sequência de Fibonacci =====");
 
         try {
             System.out.print("Digite o número de termos da sequência: ");
             int qtd = input.nextInt();
 
-            System.out.printf("\u001B[1m\u001B[34mResultado da Sequência com %d Termos: \u001B[0m", qtd);
+            System.out.printf("Resultado da Sequência com %d Termos: ", qtd);
             int anterior = 0, posterior = 1;
 
             for (int i = 0; i < qtd; i++) {
@@ -23,8 +24,10 @@ public class Main {
                 anterior = posterior;
                 posterior = proximo;
             }
+        } catch (InputMismatchException e) {
+            System.out.println("ERROR - Digite apenas números inteiros!");
         } catch (Exception e) {
-            System.out.print("\u001B[31mERROR - Digite apenas números inteiros!\u001B[0m");
+            System.out.println("Ocorreu um erro inesperado!.");
         } finally {
             input.close();
         }

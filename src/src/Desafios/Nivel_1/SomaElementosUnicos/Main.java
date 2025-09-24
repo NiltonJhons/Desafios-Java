@@ -9,15 +9,15 @@ public class Main {
     // valores não repetidos.
 
     static void main() {
-        Set<Integer> numeros = new HashSet<>(List.of(2, 5, 7, 3, 2, 9, 5, 3));
+        Set<Integer> numeros = new HashSet<>(List.of(2, 5, 5, 7, 3, 3, 9, 1, 0, 0));
         int total = 0;
 
-        System.out.print("\u001B[33mSem repeti-los, os números contidos na lista são:\u001B[0m ");
+        System.out.print("Em ordem crescente e sem repetição, os números contidos na lista são: ");
         for (Integer n : numeros) {
             System.out.print(n + " ");
             total += n;
         }
 
-        System.out.println("\n\u001B[33mE a soma entre todos eles é:\u001B[0m " + total);
+        System.out.println("\nE a soma entre todos eles é: " + total);
     }
 }

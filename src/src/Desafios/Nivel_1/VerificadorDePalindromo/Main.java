@@ -20,11 +20,11 @@ public class Main {
     static void main() {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("\u001B[1m\u001B[35m===== Verificador de Palíndromos =====\u001B[0m");
+        System.out.println("===== Verificador de Palíndromos =====");
         System.out.print("Digite uma palavra ou frase: ");
         String mensagem = input.nextLine();
 
-        System.out.printf(isPalindromo(mensagem) ? "\u001B[32mA frase é um palíndromo.\u001B[0m" : "\u001B[31mA frase NÃO é um palindromo.\u001B[0m");
+        System.out.printf(isPalindromo(mensagem) ? "A frase é um palíndromo." : "A frase NÃO é um palindromo.");
 
         input.close();
     }

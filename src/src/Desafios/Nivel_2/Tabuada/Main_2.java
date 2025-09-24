@@ -9,13 +9,19 @@ public class Main_2 {
 
         StringBuilder sb = new StringBuilder();
 
-        int num = Integer.parseInt(JOptionPane.showInputDialog("===== Gerador de Tabuada =====\nInsira um valor abaixo"));
-        int limite = Integer.parseInt(JOptionPane.showInputDialog("Até qual número deseja calcular a tabuada? Insira abaixo"));
+        try {
+            int num = Integer.parseInt(JOptionPane.showInputDialog("===== Gerador de Tabuada =====\nInsira um valor abaixo"));
+            int limite = Integer.parseInt(JOptionPane.showInputDialog("Até qual número deseja calcular a tabuada? Insira abaixo"));
 
-        for (int i = 1; i < limite + 1; i++) {
-            sb.append(num).append(" × ").append(i).append(" = ").append(num * i).append("\n");
+            for (int i = 1; i < limite + 1; i++) {
+                sb.append(num).append(" × ").append(i).append(" = ").append(num * i).append("\n");
+            }
+
+            JOptionPane.showMessageDialog(null, sb.toString());
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro inesperado!.");
+        } finally {
+            JOptionPane.showMessageDialog(null, "Até mais!");
         }
-
-        JOptionPane.showMessageDialog(null, sb.toString());
     }
 }

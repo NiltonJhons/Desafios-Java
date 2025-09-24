@@ -24,11 +24,11 @@ public class Main {
     static void main() {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("\u001B[1m\u001B[35m===== Contador de Vogais =====\u001B[0m");
+        System.out.println("===== Contador de Vogais =====");
         System.out.print("Digite uma palavra ou frase: ");
         String msg = input.nextLine();
 
-        System.out.printf("A frase '%s' contém %d vogais.", msg, contarVogais(msg));
+        System.out.printf("\nA frase '%s' contém %d vogais.", msg, contarVogais(msg));
 
         input.close();
     }
