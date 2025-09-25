@@ -1,4 +1,4 @@
-package Desafios.Nivel_1.p_013Fatorial;
+package Desafios.Nivel_1.p013_Fatorial;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

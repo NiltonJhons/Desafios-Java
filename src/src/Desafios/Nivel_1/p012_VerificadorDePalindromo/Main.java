@@ -1,4 +1,4 @@
-package Desafios.Nivel_1.p_012VerificadorDePalindromo;
+package Desafios.Nivel_1.p012_VerificadorDePalindromo;
 
 import java.util.Scanner;
 
