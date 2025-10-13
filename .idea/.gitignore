@@ -1,14 +1,20 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-.idea/
-out/
+
+# ===============================
+# Arquivos e pastas de build
+# ===============================
 /out/
 /build/
 /target/
 /bin/
-
 /classes/
+
+# ===============================
+# Configurações de IDE
+# ===============================
+# IntelliJ IDEA
 /.idea/
 /*.iml
 *.ipr
