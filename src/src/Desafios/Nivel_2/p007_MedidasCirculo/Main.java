@@ -1,4 +1,4 @@
-package Desafios.Nivel_2.p007_MedidasCirculoAvançado;
+package Desafios.Nivel_2.p007_MedidasCirculo;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -72,7 +72,7 @@ public class Main {
         System.out.print("""
                 ============================================================
                 | Qual medida você deseja inserir para calcular as demais? |
-                ============================================================
+                ------------------------------------------------------------
                 |   1 - Raio                                               |
                 |   2 - Diâmetro                                           |
                 |   3 - Circunferência                                     |
@@ -124,6 +124,8 @@ public class Main {
                 System.out.println("ERROR - Ocorreu um erro inesperado!\n");
                 input.nextLine();
                 break;
+            } finally {
+                input.close();
             }
         }
 
@@ -133,7 +135,5 @@ public class Main {
             case 3 -> System.out.println(baseCircunferencia(valorPrincipal));
             case 4 -> System.out.println(baseArea(valorPrincipal));
         }
-
-        input.close();
     }
 }
