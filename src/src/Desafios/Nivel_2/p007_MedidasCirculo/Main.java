@@ -1,4 +1,4 @@
-package Desafios.Nivel_1.p014_MedidasCirculo;
+package Desafios.Nivel_2.p007_MedidasCirculoAvançado;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
