@@ -15,6 +15,7 @@
 # Configurações de IDE
 # ===============================
 # IntelliJ IDEA
+out/
 /.idea/
 /*.iml
 *.ipr
