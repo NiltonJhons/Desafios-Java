@@ -3,6 +3,10 @@ package Desafios.Nivel_1.p015_VerificadorString;
 import java.util.Scanner;
 
 public class Main {
+    // Proposta: Desenvolva um programa que receba uma String informada pelo usuário e verifique qual o tipo de conteúdo
+    // inserido, determinando se ela contém apenas números, apenas letras, uma combinação de números e letras ou outros
+    // caracteres especiais. O programa deve exibir uma mensagem no console indicando o resultado da verificação.
+
     static void main() {
         Scanner input = new Scanner(System.in);
 
