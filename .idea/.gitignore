@@ -16,7 +16,8 @@
 # ===============================
 # IntelliJ IDEA
 out/
-/.idea/
+target/
+.idea/
 /*.iml
 *.ipr
 *.iws
