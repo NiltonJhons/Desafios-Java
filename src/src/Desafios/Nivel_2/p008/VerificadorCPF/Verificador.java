@@ -36,14 +36,14 @@ public class Verificador {
         }
 
         if (posicaoCorreta == 3) {
-            verificadorNumerica(cpf); // Chama próximo metodo
+            verificadorNumerico(cpf); // Chama próximo metodo
         } else {
             System.out.println("CPF Inválido - Posição de pontuação inadequada.");
         }
     }
 
     // Verifica se há repetição númerica ou padrão
-    private static void verificadorNumerica(String cpf) {
+    private static void verificadorNumerico(String cpf) {
         String numeros = cpf.replaceAll("\\D", ""); // Remove a pontuação
 
         if (numeros.chars().distinct().count() <= 3) {
@@ -51,7 +51,47 @@ public class Verificador {
         } else if (numeros.equals("12345678910") || numeros.equals("01234567890")) {
             System.out.println("CPF Inválido - Padrão detectado.");
         } else {
-            System.out.println("O CPF inserido está correto. Atende a todas as normas.");
+            digitosVerificadores(numeros);
         }
+    }
+
+    // Verificando o algoritmo de Módulo 11
+    private static void digitosVerificadores(String cpf) {
+        int[] digitos = new int[9];
+        int[] ultimosDigitos = new int[2];
+
+        // Separar os 9 primeiros e os 2 últimos
+        for (int i = 0; i < cpf.length(); i++) {
+            int valor = Character.getNumericValue(cpf.charAt(i));
+            if (i < 9) {
+                digitos[i] = valor;
+            } else {
+                ultimosDigitos[i - 9] = valor;
+            }
+        }
+
+        // Cálculo do primeiro dígito verificador (D1)
+        int soma1 = 0;
+        for (int i = 0; i < 9; i++) {
+            soma1 += digitos[i] * (10 - i);
+        }
+        int resto1 = soma1 % 11;
+        int D1 = (resto1 < 2) ? 0 : 11 - resto1;
+
+        // Cálculo do segundo dígito verificador (D2)
+        int soma2 = D1 * 2;
+        for (int i = 0; i < 9; i++) {
+            soma2 += digitos[i] * (11 - i);
+        }
+        int resto2 = soma2 % 11;
+        int D2 = (resto2 < 2) ? 0 : 11 - resto2;
+
+        // Verifica se o CPF é válido
+        boolean valido = (D1 == ultimosDigitos[0] && D2 == ultimosDigitos[1]);
+
+        System.out.printf("""
+                Dígitos verificadores: [%d | %d]
+                %s
+                """, D1, D2, valido ? "O CPF inserido está correto. Atende a todas as normas." : "O CPF é Inválido.");
     }
 }

@@ -19,8 +19,9 @@ public class Main {
         if (cpf.length() == 14 && !cpf.matches(".*[a-zA-Z].*")) {
             Verificador.verificadorPontuacao(cpf);
         } else {
-            System.out.println("CPF Inválido - Insira apenas números.");
+            System.out.println("CPF Inválido.");
         }
+
         input.close();
     }
 }
