@@ -1,4 +1,4 @@
-package Desafios.Nivel_2.p009.Jokenpo;
+package Desafios.Nivel_2.p009_Jokenpo;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -7,7 +7,7 @@ public class Main {
     static void main() {
         Scanner input = new Scanner(System.in);
         Random random = new Random();
-        GameSession sistema = null;
+        GameSession sistema;
         String[] emojisReservados = {"🐯", "🖥️", "❤️", "💙", "🖤", "🤛", "✋", "✌️", "❌", "😛", "🥳", "☠️", "🐍"}; // Lista de emojis reservados
 
         System.out.println("""

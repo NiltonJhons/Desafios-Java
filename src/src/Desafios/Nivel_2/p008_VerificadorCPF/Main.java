@@ -1,4 +1,4 @@
-package Desafios.Nivel_2.p008.VerificadorCPF;
+package Desafios.Nivel_2.p008_VerificadorCPF;
 
 import java.util.Scanner;
 

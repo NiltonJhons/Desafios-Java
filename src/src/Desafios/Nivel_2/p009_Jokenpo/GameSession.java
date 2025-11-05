@@ -1,4 +1,4 @@
-package Desafios.Nivel_2.p009.Jokenpo;
+package Desafios.Nivel_2.p009_Jokenpo;
 
 public class GameSession {
     String nome;
