@@ -17,7 +17,7 @@ public class Main {
 
         // Verifica se há 14 digitos e se NÂO há letras
         if (cpf.length() == 14 && !cpf.matches(".*[a-zA-Z].*")) {
-            Verificador.verificadorPontuacao(cpf);
+            Processos.verificadorPontuacao(cpf);
         } else {
             System.out.println("CPF Inválido.");
         }

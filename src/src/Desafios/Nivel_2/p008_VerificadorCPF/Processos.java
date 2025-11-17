@@ -1,6 +1,6 @@
 package Desafios.Nivel_2.p008_VerificadorCPF;
 
-public class Verificador {
+public class Processos {
 
     // Verifica se contém 2 pontos e 1 traço
     public static void verificadorPontuacao(String cpf) {
@@ -63,6 +63,7 @@ public class Verificador {
         // Separar os 9 primeiros e os 2 últimos
         for (int i = 0; i < cpf.length(); i++) {
             int valor = Character.getNumericValue(cpf.charAt(i));
+
             if (i < 9) {
                 digitos[i] = valor;
             } else {
